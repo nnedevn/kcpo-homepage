@@ -31,15 +31,14 @@ class App extends Component {
     );
 
     return (
-      <div className="page-container">
+      <div className="wrap">
         <Navbar />
         <Grid>
           <Row className="show-grid">
-            <Col xs={4} md={4}>
             <VerticalNavigation />
-            </Col>
-            <Col xs={6} md={8}>
-            {paragraphs.map(paragraph => paragraph)}
+            <Col xs={4} md={4} className="sidebar-menu" />
+            <Col xs={6} md={8} className="content">
+              {paragraphs.map(paragraph => paragraph)}
             </Col>
           </Row>
         </Grid>
