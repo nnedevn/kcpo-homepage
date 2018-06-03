@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 // import logo from './logo.gif';
 import "./App.css";
-import { flatten, times } from "lodash";
+import { flatten, times, range } from "lodash";
 
 //Component Imports
 import Navbar from "./Components/Navbar";
-import Sidebar from "./Components/Sidebar";
+import VerticalNavigation from "./Components/VerticalNavigation";
 import Footer from "./Components/Footer";
 import MainContent from "./Components/MainContent";
 import { Grid, Row, Col } from "react-bootstrap";
@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   render() {
-    const NUMBER_OF_PARAGRAPHS = 5;
+    const NUMBER_OF_PARAGRAPHS = 15;
     const paragraphs = flatten(
       times(NUMBER_OF_PARAGRAPHS, index => {
         return (
@@ -29,20 +29,20 @@ class App extends Component {
         );
       })
     );
+
     return (
-      <div className="App">
+      <div className="page-container">
         <Navbar />
         <Grid>
           <Row className="show-grid">
-            <Col xs={12} md={8}>
-              {paragraphs.map(paragraph => paragraph)}
+            <Col xs={4} md={4}>
+            <VerticalNavigation />
             </Col>
-            <Col xs={6} md={4}>
-              <code>&lt;{"Col xs={6} md={4}"} /">">">&gt;</code>
+            <Col xs={6} md={8}>
+            {paragraphs.map(paragraph => paragraph)}
             </Col>
           </Row>
         </Grid>
-        <Sidebar />
         <MainContent />
         <Footer />
       </div>

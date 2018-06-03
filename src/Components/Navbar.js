@@ -37,8 +37,7 @@ class NavigationBar extends Component {
             <NavItem eventKey={4} href="https://www.kingcounty.gov/depts.aspx">
               Departments
             </NavItem>     
-          </Nav>
-          
+          </Nav>        
         </Navbar.Collapse>
       </Navbar>
     );
