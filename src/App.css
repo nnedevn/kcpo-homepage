@@ -24,13 +24,10 @@ p {
   background-color:red;
 }
 
- body, html {
-  font: 12px/16px sans-serif;
-  height: 100%;
-}
+
 .wrap {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 /* 
   Be careful with height set on
   the parent of a sticky element.

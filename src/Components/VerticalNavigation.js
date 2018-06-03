@@ -6,6 +6,13 @@ class VerticalNavigation extends React.Component {
     return (
       <aside className="aside">
         <h3>Sticky Sidebar</h3>
+        <ul>
+          <a href="#"><li>Link 1</li></a>
+          <a href="#"><li>Link 1</li></a>
+          <a href="#"><li>Link 1</li></a>
+          <a href="#"><li>Link 1</li></a>
+          <a href="#"><li>Link 1</li></a>
+        </ul>
       </aside>
     );
   }
