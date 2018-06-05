@@ -11,9 +11,9 @@ import {
 class NavigationBar extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect>
+      <Navbar inverse collapseOnSelect className="navigation-bar">
         <Navbar.Header>
-          <Navbar.Brand>
+          <Navbar.Brand className="navigation-bar-brand">
             <a href="https://www.kingcounty.gov/">
               <img src={logo} alt=""/>
             </a>
@@ -21,23 +21,23 @@ class NavigationBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="https://www.kingcounty.gov/">
+          <Nav navbar>
+            <NavItem className="navbar-item" eventKey={1} href="https://www.kingcounty.gov/">
               Home
             </NavItem>
-            <NavItem eventKey={2} href="https://www.kingcounty.gov/how-do-i.aspx">
+            <NavItem className="navbar-item" eventKey={2} href="https://www.kingcounty.gov/how-do-i.aspx">
               How do I...
             </NavItem>
-            <NavItem eventKey={3} href="https://www.kingcounty.gov/services.aspx">
+            <NavItem className="navbar-item" eventKey={3} href="https://www.kingcounty.gov/services.aspx">
               Services
             </NavItem>
-            <NavItem eventKey={4} href="https://www.kingcounty.gov/about.aspx">
+            <NavItem className="navbar-item" eventKey={4} href="https://www.kingcounty.gov/about.aspx">
               About King County
             </NavItem>   
             <NavItem eventKey={4} href="https://www.kingcounty.gov/depts.aspx">
               Departments
             </NavItem> 
-            <NavItem eventKey={5}>
+            <NavItem className="navbar-item" eventKey={5}>
             <span class="glyphicon glyphicon-search"></span>
             </NavItem>
           </Nav>        

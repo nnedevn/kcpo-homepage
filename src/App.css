@@ -1,55 +1,61 @@
 body,
 html {
-  height: 200%;
-
-}
-
-body {
-  position: relative;
-  display: flex;
+    height: 100%;
 }
 
 p {
-  margin: 0 0 20px;
+    margin: 0 0 20px;
 }
 
-.sidebar-menu{
-  overflow: visible;
-}
-
-.test {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; /* required */
-  background-color:red;
-}
-
-
-.wrap {
-  margin: 0 auto;
-  width: 100%;
-/* 
-  Be careful with height set on
-  the parent of a sticky element.
-  Uncomment to see issue.
-*/
-/*   height: 40%; */
-/* 
-  overflow cannot be used on
-  parents of position: sticky, 
-  uncomment to demonstrate the issue.
-*/
-/*   overflow: hidden; */
-/*   overflow-y: scroll; */
-}
-
-.aside {
+aside {
   background: #eee;
   float: left;
-
   padding: 1em;
   /* position sticky */
   position: sticky;
   top: 3em;
+}
+
+.navigation-bar-brand{
+  background-color: #FFF;
+  padding: 15px 20px;
+}
+div.navbar-collapse.collapse > ul > li > a{
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.navbar{
+  min-height: 100px;
+  border-radius: 0px;
+}
+
+
+.main-content {
+    /* height:200%; */
+}
+
+.sidebar-menu {
+    overflow: visible;
+}
+
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    /* 
+  Be careful with height set on
+  the parent of a sticky element.
+  Uncomment to see issue.
+*/
+    /*   height: 40%; */
+    /* 
+  overflow cannot be used on
+  parents of position: sticky, 
+  uncomment to demonstrate the issue.
+*/
+    /*   overflow: hidden; */
+    /*   overflow-y: scroll; */
 }
 

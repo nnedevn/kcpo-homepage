@@ -21,7 +21,7 @@ class Navbar extends Component {
 
     return (
       <div className="main-content">
-        <div>{/* {paragraphs.map(paragraph => paragraph)} */}</div>
+        <div>{paragraphs.map(paragraph => paragraph)}</div>
         <div className="main-content-news">
           <p>hello</p>
         </div>
