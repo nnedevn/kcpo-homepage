@@ -36,6 +36,10 @@ aside > ul {
   padding: 0;
 }
 
+button{
+  margin-right: 15px;
+}
+
 .list-group-item {
   background-color: #a5c727;
   border: none;
@@ -110,7 +114,7 @@ h2 {
 }
 .team-image{
   padding-top: 25px;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
 .attorney-portrait{
   width:150px;
@@ -144,6 +148,7 @@ h2 {
   background-color: #EEE;
   padding: 20px;
   font-size: 1.1em;
+  margin-top: 60px;
 
 }
 .footer-nav ul li{

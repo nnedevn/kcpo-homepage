@@ -34,7 +34,7 @@ class Navbar extends Component {
             <Breadcrumb.Item href="#">Prosecuting Attorney</Breadcrumb.Item>
           </Breadcrumb>
           <Row className="show-grid">
-            <Col xs={12}>
+            <Col xs={10}>
               <h1>King County Prosecuting Attorney</h1>
             </Col>
           </Row>
@@ -47,7 +47,7 @@ class Navbar extends Component {
             </Col>
           </Row> */}
           <Row className="show-grid">
-            <Col xs={12} sm={6}>
+            <Col xs={10} sm={5}>
               <h2>Community services</h2>
               <Image
                 responsive
@@ -61,7 +61,7 @@ class Navbar extends Component {
               </p>
               <Button bsStyle="primary">See Community Programs</Button>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={10} sm={5}>
               <h2>Careers and Volunteering</h2>
               <Image
                 className="team-image"
