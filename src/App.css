@@ -1,6 +1,7 @@
 body,
 html {
     height: 100%;
+    font-family: Roboto;
 }
 
 p {
@@ -8,19 +9,34 @@ p {
 }
 
 aside {
-  background: #eee;
+  background: #a5c727;
   float: left;
   padding: 1em;
   /* position sticky */
   position: sticky;
   top: 3em;
+  display: inline-block;
+}
+aside > h3 > a:hover {
+  text-decoration: none;
+  color:#000;
+}
+aside > h3 > a{
+  color: #FFF;
+  font-size: 1.1em;
+  font-weight: 0;
+}
+
+aside > ul {
+  list-style-type: none;
+}
+
+.list-group-item {
+  background-color: none;
+  border: none;
 }
 
 
-
-.navbar-header{
-
-}
 
 .navbar-brand>img{
   padding: 15px 20px;
@@ -37,6 +53,19 @@ div.navbar-collapse.collapse > ul > li > a{
   font-weight: 700;
   font-size: 1.3em;
 }
+
+div.navbar-collapse.collapse > ul > li > a:hover{
+  color:#DDD;
+}
+
+
+.navbar-collapse.collapse > ul > li:nth-child(5) > a{
+border-bottom: 4px solid #a5c727;
+}
+
+.toggle-sidebar-btn{
+  display: none;
+} 
 
 .navbar{
   min-height: 100px;
@@ -71,3 +100,31 @@ div.navbar-collapse.collapse > ul > li > a{
     /*   overflow-y: scroll; */
 }
 
+.footer-nav{
+  background-color: #EEE;
+  padding: 20px;
+  font-size: 1.1em;
+
+}
+.footer-nav ul li{
+    padding: 6px 0;
+  }
+.footer-nav a{
+color: #000;
+text-decoration: none;
+}
+
+.footer-nav h4{
+  font-size: 1.4em;
+}
+
+
+@media (max-width: 570px) { 
+  /* aside {
+    display: none;
+  } */
+
+  .toggle-sidebar-btn{
+    display: grid;
+  } 
+}
