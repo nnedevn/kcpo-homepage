@@ -21,10 +21,31 @@ class Navbar extends Component {
 
     return (
       <div className="main-content">
-        <div>{paragraphs.map(paragraph => paragraph)}</div>
+        {/* <div>{paragraphs.map(paragraph => paragraph)}</div>
         <div className="main-content-news">
           <p>hello</p>
-        </div>
+        </div> */}
+        <Grid>
+          <Row className="show-grid">
+            <Col xs={12}>
+              <h1>Prosec.</h1>
+            </Col>
+          </Row>  
+          <Row className="show-grid">
+            <Col xs={12}>
+              <h2>This is an h2</h2>
+            </Col>
+          </Row>  
+          <Row className="show-grid">
+            <Col xs={12} md={6}>
+            <div>{paragraphs.map(paragraph => paragraph)}</div>
+            </Col>
+            <Col xs={12} md={6}>
+            <div>{paragraphs.map(paragraph => paragraph)}</div>
+            </Col>
+          </Row>  
+        </Grid>
+
       </div>
     );
   }
