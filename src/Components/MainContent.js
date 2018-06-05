@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { flatten, times, range } from "lodash";
+import { Grid, Row, Col } from "react-bootstrap";
 
 class Navbar extends Component {
   render() {
-
+    //used to generate placeholder content
     const NUMBER_OF_PARAGRAPHS = 15;
     const paragraphs = flatten(
       times(NUMBER_OF_PARAGRAPHS, index => {
@@ -19,8 +20,11 @@ class Navbar extends Component {
     );
 
     return (
-      <div>
-        {paragraphs.map(paragraph => paragraph)}
+      <div className="main-content">
+        <div>{/* {paragraphs.map(paragraph => paragraph)} */}</div>
+        <div className="main-content-news">
+          <p>hello</p>
+        </div>
       </div>
     );
   }
