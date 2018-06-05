@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { flatten, times, range } from "lodash";
-import { Grid, Row, Col } from "react-bootstrap";
+import { Grid, Row, Col, Image } from "react-bootstrap";
 
 class Navbar extends Component {
   render() {
@@ -26,26 +26,35 @@ class Navbar extends Component {
           <p>hello</p>
         </div> */}
         <Grid>
+          <p>Here goes a breadcrumb.</p>
           <Row className="show-grid">
             <Col xs={12}>
-              <h1>Prosec.</h1>
+              <h1>King County Prosecuting Attorney</h1>
             </Col>
-          </Row>  
+          </Row>
           <Row className="show-grid">
             <Col xs={12}>
-              <h2>This is an h2</h2>
+              <h2>A quote from the video</h2>
             </Col>
-          </Row>  
+          </Row>
+          <Row className="show-grid">
+            <Col xs={12}>
+              <h1>Meet the team.</h1>
+              <Image responsive
+                src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/12657790_1049695061717886_8986899882012056349_o.jpg?_nc_cat=0&oh=b0d6a245bfb33edb4f02a958cf7d5e2d&oe=5B7D92C2"
+                alt="Prosecutors Team"
+              />
+            </Col>
+          </Row>
           <Row className="show-grid">
             <Col xs={12} md={6}>
-            <div>{paragraphs.map(paragraph => paragraph)}</div>
+              <div>{paragraphs.map(paragraph => paragraph)}</div>
             </Col>
             <Col xs={12} md={6}>
-            <div>{paragraphs.map(paragraph => paragraph)}</div>
+              <div>{paragraphs.map(paragraph => paragraph)}</div>
             </Col>
-          </Row>  
+          </Row>
         </Grid>
-
       </div>
     );
   }

@@ -35,7 +35,7 @@ class VerticalNavigation extends React.Component {
                   <h3>
                     <a href="/">Prosecuting Attorney</a>{" "}
                   </h3>
-                  
+
                   <ul>
                     <li>
                       <a

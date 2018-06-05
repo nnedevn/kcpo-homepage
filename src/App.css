@@ -21,7 +21,7 @@ aside > h3 > a:hover {
   text-decoration: none;
   color:#000;
 }
-aside > h3 > a{
+aside > h3 > a{ 
   display: block;
   color: #FFF;
   font-size: 1.1em;
