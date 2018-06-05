@@ -9,102 +9,106 @@ p {
 }
 
 aside {
-  background: #a5c727;
-  float: left;
-  padding: 1em;
-  /* position sticky */
-  position: sticky;
-  top: 3em;
-  display: block;
-}
-aside > h3 > a:hover {
-  text-decoration: none;
-  color:#000;
-}
-aside > h3 > a{ 
-  display: block;
-  color: #FFF;
-  font-size: 1.1em;
-  font-weight: 0;
-  margin: 0 15px 30px 0;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #FFF;
+    background: #a5c727;
+    float: left;
+    padding: 1em;
+    /* position sticky */
+    position: sticky;
+    top: 3em;
+    display: block;
 }
 
-aside > ul {
-  list-style-type: none;
-  padding: 0;
+aside>h3>a:hover {
+    text-decoration: none;
+    color: #000;
 }
 
-button{
-  margin-right: 15px;
+aside>h3>a {
+    display: block;
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: 0;
+    margin: 0 15px 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFF;
+}
+
+aside>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    margin-right: 15px;
 }
 
 .list-group-item {
-  background-color: #a5c727;
-  border: none;
-  font-size: 1.2em;
+    background-color: #a5c727;
+    border: none;
+    font-size: 1.2em;
 }
 
-.navbar-brand>img{
-  padding: 15px 20px;
-  background-color: #FFF;
+.navbar-brand>img {
+    padding: 15px 20px;
+    background-color: #FFF;
 }
 
-div.navbar-collapse.collapse > ul {
-  margin-top:30px;
-  margin-left:10px;
+div.navbar-collapse.collapse>ul {
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
-div.navbar-collapse.collapse > ul > li > a{
-  color: #FFF;
-  font-weight: 700;
-  font-size: 1.3em;
+div.navbar-collapse.collapse>ul>li>a {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.3em;
 }
 
-div.navbar-collapse.collapse > ul > li > a:hover{
-  color:#DDD;
+div.navbar-collapse.collapse>ul>li>a:hover {
+    color: #DDD;
 }
 
-
-.navbar-collapse.collapse > ul > li:nth-child(5) > a{
-border-bottom: 4px solid #a5c727;
+.navbar-collapse.collapse>ul>li:nth-child(5)>a {
+    border-bottom: 4px solid #a5c727;
 }
 
-.toggle-sidebar-btn{
-  display: none;
-} 
+.toggle-sidebar-btn {
+    display: none;
+}
 
-.navbar{
-  min-height: 100px;
-  border-radius: 0px;
-  margin-bottom: 0;
+.navbar {
+    min-height: 100px;
+    border-radius: 0px;
+    margin-bottom: 0;
 }
 
 .breadcrumb {
-  background-color: #FFF;
-  padding: 36px 0;
+    background-color: #FFF;
+    padding: 36px 0;
 }
+
 .breadcrumb a {
-  font-size: 1.2em;
-  color: #a5c727;
+    font-size: 1.2em;
+    color: #a5c727;
 }
 
 h1 {
-  border-bottom: 4px solid #a5c727;
-  padding: 0 0 32px;
-  margin-top: 0;
+    border-bottom: 4px solid #a5c727;
+    padding: 0 0 32px;
+    margin-top: 0;
 }
 
 h2 {
-  text-transform: uppercase;
-  color: #FFF;
-  background-color: #a5c727;
-  padding: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #a5c727;
+    padding: 16px;
 }
+
 .primary {
-  background-color: #264c5d;
+    background-color: #264c5d;
 }
+
 .main-content {
     /* height:200%; */
 }
@@ -112,13 +116,16 @@ h2 {
 .sidebar-menu {
     overflow: visible;
 }
-.team-image{
-  padding-top: 25px;
-  padding-bottom: 30px;
+
+.team-image {
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
-.attorney-portrait{
-  width:150px;
+
+.attorney-portrait {
+    width: 150px;
 }
+
 .wrap {
     margin: 0 auto;
     width: 100%;
@@ -138,38 +145,49 @@ h2 {
 }
 
 .well {
-  border: none;
-  padding: 0;
-  margin: 0;
-  min-height: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
 }
 
-.footer-nav{
-  background-color: #EEE;
-  padding: 20px;
-  font-size: 1.1em;
-  margin-top: 60px;
-
+.footer-nav {
+    background-color: #EEE;
+    padding: 20px;
+    font-size: 1.1em;
+    margin-top: 60px;
 }
-.footer-nav ul li{
+
+.footer-nav ul li {
     padding: 6px 0;
-  }
-.footer-nav a{
-color: #000;
-text-decoration: none;
 }
 
-.footer-nav h4{
-  font-size: 1.4em;
+.footer-nav a {
+    color: #000;
+    text-decoration: none;
 }
 
+.footer-nav h4 {
+    font-size: 1.4em;
+}
 
-@media (max-width: 570px) { 
-  /* aside {
+.hidden {
     display: none;
-  } */
+}
 
-  .toggle-sidebar-btn{
-    display: grid;
-  } 
+.show {
+    display: block;
+}
+
+@media (max-width: 570px) {
+    aside {
+        display: none;
+        width: 100%;
+    }
+    .toggle-sidebar-btn {
+        display: grid;
+        width: 100%;
+        background-color: #a5c727;
+        font-size: 1.1em;
+    }
 }

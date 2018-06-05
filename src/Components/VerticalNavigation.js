@@ -26,7 +26,7 @@ class VerticalNavigation extends React.Component {
             className="toggle-sidebar-btn"
             onClick={() => this.setState({ open: !this.state.open })}
           >
-            click
+            Menu
           </Button>
           <Fade in={this.state.open}>
             <div>
@@ -55,8 +55,6 @@ class VerticalNavigation extends React.Component {
                         Our Mission{" "}
                       </a>
                     </li>
-
-
                     <li>
                       <a
                         className="list-group-item "
