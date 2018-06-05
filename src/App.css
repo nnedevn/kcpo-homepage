@@ -181,14 +181,14 @@ h2 {
 
 @media (max-width: 570px) {
     aside {
-        display: none;
+        /* display: none; */
         width: 100%;
     }
     .toggle-sidebar-btn,
     .toggle-sidebar-btn:focus,
     .toggle-sidebar-btn:hover,
     .toggle-sidebar-btn:active,
-   {
+    .toggle-sidebar-btn:focus {
         display: grid;
         width: 100%;
         background-color: #a5c727;
