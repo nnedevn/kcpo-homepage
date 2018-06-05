@@ -49,6 +49,17 @@ class VerticalNavigation extends React.Component {
                     <li>
                       <a
                         className="list-group-item "
+                        title="Our Mission"
+                        href="https://www.kingcounty.gov/depts/prosecutor/mission.aspx"
+                      >
+                        Our Mission{" "}
+                      </a>
+                    </li>
+
+
+                    <li>
+                      <a
+                        className="list-group-item "
                         title="How to . . . "
                         href="https://www.kingcounty.gov/depts/prosecutor/how-to.aspx"
                       >
