@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { flatten, times, range } from "lodash";
-import { Grid, Row, Col, Image } from "react-bootstrap";
+import { Grid, Row, Col, Image, Button, Breadcrumb } from "react-bootstrap";
+import { FontAwesome } from "react-fontawesome";
 
 class Navbar extends Component {
   render() {
@@ -26,40 +27,61 @@ class Navbar extends Component {
           <p>hello</p>
         </div> */}
         <Grid>
-          <p>Here goes a breadcrumb.</p>
+          <Breadcrumb>
+            <Breadcrumb.Item href="https://www.kingcounty.gov/">
+              Home
+            </Breadcrumb.Item>
+            <Breadcrumb.Item href="#">Prosecuting Attorney</Breadcrumb.Item>
+          </Breadcrumb>
           <Row className="show-grid">
             <Col xs={12}>
               <h1>King County Prosecuting Attorney</h1>
             </Col>
           </Row>
-          <Row className="show-grid">
+          {/* <Row className="show-grid">
             <Col xs={12}>
               <blockquote>
                 We reduce the harm to the community but also try to restore the
                 deficits in the offenders life.{" "}
               </blockquote>
             </Col>
-          </Row>
+          </Row> */}
           <Row className="show-grid">
             <Col xs={12} sm={6}>
               <h2>Community services</h2>
               <Image
                 responsive
                 src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/18424055_1435990569754998_4450440117694340328_n.png?_nc_cat=0&oh=ba69af112b2fda2e69ba2baa054629b4&oe=5BBC7538"
-                alt="Prosecutors Team"
+                alt="Community Services"
               />
+              <p>
+                The Domestic Abuse Women's Network (DAWN) is a partner with the
+                King County Prosecuting Attorney's office, and we are proud to
+                work alongside them to end domestic violence.
+              </p>
+              <Button bsStyle="primary">See Community Programs</Button>
             </Col>
             <Col xs={12} sm={6}>
-              <h2>Join our team!</h2>
+              <h2>Careers and Volunteering</h2>
               <Image
+                className="team-image"
                 responsive
                 src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/12657790_1049695061717886_8986899882012056349_o.jpg?_nc_cat=0&oh=b0d6a245bfb33edb4f02a958cf7d5e2d&oe=5B7D92C2"
                 alt="Prosecutors Team"
               />
+              <p>
+                We serve our diverse community, support victims and families,
+                and hold individuals accountable. We develop innovative and
+                collaborative solutions for King County and the State of
+                Washington.
+              </p>
+              <Button bsStyle="primary">
+                See Career and Volunteer Opportunities
+              </Button>
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12}>
+            <Col xs={10}>
               <div class="panel panel-inverse">
                 <div class="panel-heading">
                   <h3 class="panel-title">The Docket</h3>
@@ -228,10 +250,56 @@ class Navbar extends Component {
             <Col xs={12} md={6}>
               <div>{paragraphs.map(paragraph => paragraph)}</div>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6}>King County Courthouse
+516 Third Avenue, W400 
+Seattle, WA 98104
+Hours: 8:30 a.m. - 4:30 p.m
               <div>{paragraphs.map(paragraph => paragraph)}</div>
             </Col>
           </Row> */}
+
+          <Row className="show-grid">
+            <Col xs={12} sm={6}>
+              <div>
+                <h3>Prosecuting Attorney's Office</h3>
+                <address>
+                  King County Courthouse <br />
+                  516 Third Avenue, W400 <br />
+                  Seattle, WA 98104<br />
+                  Hours: 8:30 a.m. - 4:30 p.m
+                </address>
+                <Button
+                  bsStyle="primary"
+                  href="https://www.google.com/maps/dir//516+3rd+Ave,+Seattle,+WA+98104/@47.6026638,-122.4006957,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54906aba6e559577:0x4fbda7a312401f46!2m2!1d-122.330656!2d47.6026851"
+                  aprimary
+                >
+                  Get directions
+                </Button>
+              </div>
+            </Col>
+            <Col xs={12} sm={6}>
+              <Grid>
+                <Row>
+                  <Col xs={12} sm={2}>
+                    <Image className="attorney-portrait"
+                      thumbnail
+                      src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/16939219_1358162700871119_3835895852560217291_n.jpg?_nc_cat=0&oh=ad015e4a7671b42e0baea0307e7a0293&oe=5BBA9D15"
+                    />
+                  </Col>
+                  <Col xs={12} sm={10}>
+                    <div>
+                      <h3>Dan Satterberg</h3>
+
+                      <h4>King County Prosecutor</h4>
+                    </div>
+                    <Button bsStyle="primary">Facebook</Button>
+                    <Button bsStyle="primary">Twitter</Button>
+                    <Button bsStyle="primary">LinkedIn</Button>
+                  </Col>
+                </Row>
+              </Grid>
+            </Col>
+          </Row>
         </Grid>
       </div>
     );

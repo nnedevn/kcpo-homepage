@@ -18,12 +18,10 @@ class App extends Component {
     return (
       <div className="wrap" bcClass="">
           <Navbar />
-        <Grid fluid>
-      
+        <Grid fluid>  
           <Row className="show-grid">
             <VerticalNavigation />
             {/* <Col xs={4} md={4} className="sidebar-menu">
-
             </Col> */}
             <Col xs={6} md={8} className="content">
             <MainContent />
