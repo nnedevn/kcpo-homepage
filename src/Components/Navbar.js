@@ -37,7 +37,7 @@ class NavigationBar extends Component {
             <NavItem eventKey={4} href="https://www.kingcounty.gov/depts.aspx">
               Departments
             </NavItem> 
-            <NavItem>
+            <NavItem eventKey={5}>
             <span class="glyphicon glyphicon-search"></span>
             </NavItem>
           </Nav>        
