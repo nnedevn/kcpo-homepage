@@ -16,10 +16,22 @@ aside {
   top: 3em;
 }
 
-.navigation-bar-brand{
-  background-color: #FFF;
-  padding: 15px 20px;
+
+
+.navbar-header{
+
 }
+
+.navbar-brand>img{
+  padding: 15px 20px;
+  background-color: #FFF;
+}
+
+div.navbar-collapse.collapse > ul {
+  margin-top:30px;
+  margin-left:10px;
+}
+
 div.navbar-collapse.collapse > ul > li > a{
   color: #FFF;
   font-weight: 700;

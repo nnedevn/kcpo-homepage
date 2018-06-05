@@ -11,9 +11,9 @@ import {
 class NavigationBar extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect className="navigation-bar">
+      <Navbar inverse fluid>
         <Navbar.Header>
-          <Navbar.Brand className="navigation-bar-brand">
+          <Navbar.Brand >
             <a href="https://www.kingcounty.gov/">
               <img src={logo} alt=""/>
             </a>
@@ -21,7 +21,7 @@ class NavigationBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav navbar>
+          <Nav pullRight>
             <NavItem className="navbar-item" eventKey={1} href="https://www.kingcounty.gov/">
               Home
             </NavItem>

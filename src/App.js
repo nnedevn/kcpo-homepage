@@ -16,9 +16,10 @@ class App extends Component {
   render() {
   
     return (
-      <div className="wrap">
-        <Navbar />
-        <Grid>
+      <div className="wrap" bcClass="">
+          <Navbar />
+        <Grid fluid>
+      
           <Row className="show-grid">
             <VerticalNavigation />
             {/* <Col xs={4} md={4} className="sidebar-menu">

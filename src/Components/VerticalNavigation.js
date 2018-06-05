@@ -3,7 +3,7 @@ import React from "react";
 class VerticalNavigation extends React.Component {
   render() {
     return (
-      <aside className="aside">
+      <aside className="aside" fluid>
         <a href="">
           <h3>Prosecuting Attorney</h3>
         </a>
