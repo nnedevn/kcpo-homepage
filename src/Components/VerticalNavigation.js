@@ -10,13 +10,19 @@ import {
   Well
 } from "react-bootstrap";
 class VerticalNavigation extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-
+  constructor(props) {
+    super(props);
     this.state = {
-      open: true
+      open: true,
+      status: "show"
     };
   }
+
+  toggleSidenav = () => {
+    let cssStatus = this.state.status === "hidden" ? "show" : "hidden";
+    this.setState({ status: cssStatus });
+    // alert(this.state.status)
+  };
 
   render() {
     return (
@@ -24,14 +30,18 @@ class VerticalNavigation extends React.Component {
         <div>
           <Button
             className="toggle-sidebar-btn"
-            onClick={() => this.setState({ open: !this.state.open })}
+            onClick={() => {
+              
+              this.toggleSidenav();
+              this.setState({ open: !this.state.open });
+            }}
           >
             Menu
           </Button>
           <Fade in={this.state.open}>
             <div>
-              <Well>
-                <aside className="aside" fluid>
+              <Well className={this.state.status}>
+                <aside className="aside" className={this.state.status} fluid>
                   <h3>
                     <a href="/">Prosecuting Attorney</a>{" "}
                   </h3>

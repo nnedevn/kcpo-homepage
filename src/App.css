@@ -184,10 +184,20 @@ h2 {
         display: none;
         width: 100%;
     }
-    .toggle-sidebar-btn {
+    .toggle-sidebar-btn,
+    .toggle-sidebar-btn:focus,
+    .toggle-sidebar-btn:hover,
+    .toggle-sidebar-btn:active,
+   {
         display: grid;
         width: 100%;
         background-color: #a5c727;
         font-size: 1.1em;
+    }
+}
+
+@media (min-width: 580px) {
+    aside {
+        display: block;
     }
 }
